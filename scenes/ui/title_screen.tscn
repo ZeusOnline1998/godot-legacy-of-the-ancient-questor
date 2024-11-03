@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://v52fnywg8qsn"]
+[gd_scene load_steps=5 format=3 uid="uid://v52fnywg8qsn"]
 
 [ext_resource type="Texture2D" uid="uid://bg30f6ko1voyq" path="res://gfx/title/tree-3094982_1280.jpg" id="1_ta6nj"]
 [ext_resource type="FontFile" uid="uid://vtp4xxo8010d" path="res://fonts/alagard_by_pix3m-d6awiwp.ttf" id="2_c5x18"]
+[ext_resource type="Theme" uid="uid://bgbln1h5xo8jg" path="res://themes/default_theme.tres" id="3_8y2ru"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l26ak"]
 font = ExtResource("2_c5x18")
@@ -70,12 +71,21 @@ size_flags_horizontal = 3
 
 [node name="New Game Button" type="Button" parent="Content/VBoxContainer/HBoxContainer/Button Menu"]
 layout_mode = 2
+focus_mode = 0
+theme = ExtResource("3_8y2ru")
+theme_override_font_sizes/font_size = 45
 text = "New Game"
 
 [node name="Load Game Button" type="Button" parent="Content/VBoxContainer/HBoxContainer/Button Menu"]
 layout_mode = 2
+focus_mode = 0
+theme = ExtResource("3_8y2ru")
+theme_override_font_sizes/font_size = 45
 text = "Load Game"
 
 [node name="Credits Button" type="Button" parent="Content/VBoxContainer/HBoxContainer/Button Menu"]
 layout_mode = 2
+focus_mode = 0
+theme = ExtResource("3_8y2ru")
+theme_override_font_sizes/font_size = 45
 text = "Credits"
