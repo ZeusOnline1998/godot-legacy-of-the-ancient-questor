@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://v52fnywg8qsn"]
+[gd_scene load_steps=7 format=3 uid="uid://v52fnywg8qsn"]
 
 [ext_resource type="Texture2D" uid="uid://bg30f6ko1voyq" path="res://gfx/title/tree-3094982_1280.jpg" id="1_ta6nj"]
 [ext_resource type="FontFile" uid="uid://vtp4xxo8010d" path="res://fonts/alagard_by_pix3m-d6awiwp.ttf" id="2_c5x18"]
 [ext_resource type="Theme" uid="uid://bgbln1h5xo8jg" path="res://themes/default_theme.tres" id="3_8y2ru"]
+[ext_resource type="Script" path="res://scripts/title/version_number.gd" id="4_2tp1x"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l26ak"]
 font = ExtResource("2_c5x18")
@@ -12,6 +13,10 @@ outline_color = Color(0, 0, 0, 1)
 shadow_size = 5
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_r4ohg"]
+font = ExtResource("2_c5x18")
+font_color = Color(1, 1, 0, 1)
 
 [node name="Title Screen" type="Control"]
 layout_mode = 3
@@ -89,3 +94,18 @@ focus_mode = 0
 theme = ExtResource("3_8y2ru")
 theme_override_font_sizes/font_size = 45
 text = "Credits"
+
+[node name="Version Number" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -25.0
+offset_right = 136.0
+offset_bottom = -2.0
+grow_vertical = 0
+text = "Version: "
+label_settings = SubResource("LabelSettings_r4ohg")
+vertical_alignment = 1
+script = ExtResource("4_2tp1x")
