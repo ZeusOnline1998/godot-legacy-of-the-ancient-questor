@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://v52fnywg8qsn"]
+[gd_scene load_steps=8 format=3 uid="uid://v52fnywg8qsn"]
 
+[ext_resource type="Script" path="res://scripts/title/title_screen.gd" id="1_1ivhh"]
 [ext_resource type="Texture2D" uid="uid://bg30f6ko1voyq" path="res://gfx/title/tree-3094982_1280.jpg" id="1_ta6nj"]
 [ext_resource type="FontFile" uid="uid://vtp4xxo8010d" path="res://fonts/alagard_by_pix3m-d6awiwp.ttf" id="2_c5x18"]
 [ext_resource type="Theme" uid="uid://bgbln1h5xo8jg" path="res://themes/default_theme.tres" id="3_8y2ru"]
@@ -25,6 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_1ivhh")
 
 [node name="BackgroundImage" type="TextureRect" parent="."]
 layout_mode = 1
@@ -109,3 +111,5 @@ text = "Version: "
 label_settings = SubResource("LabelSettings_r4ohg")
 vertical_alignment = 1
 script = ExtResource("4_2tp1x")
+
+[connection signal="pressed" from="Content/VBoxContainer/HBoxContainer/Button Menu/New Game Button" to="." method="_on_new_game_button_pressed"]

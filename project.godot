@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="Legend of Ancient Questor"
-config/version="prototype 1"
+config/version="prototype 2"
+run/main_scene="res://scenes/ui/title_screen.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Loader="*res://scripts/loader.gd"
 
 [display]
 
